@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 User=tim
-ExecStart=/home/pi/git/mqtt_translator/mqtt_translator.py
+ExecStart=/home/tim/git/mqtt_translator/mqtt_translator.py
 WorkingDirectory=/home/tim/git/mqtt_translator
 StandardOutput=syslog
 StandardError=syslog

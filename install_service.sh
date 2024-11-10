@@ -1,6 +1,6 @@
 echo "Stop service"
 sudo systemctl stop mqtt_translator.service
-source venv/bin/activate
+source ./venv/bin/activate
 pip install -r requirements.txt
 echo "Copy service"
 sudo cp mqtt_translator.service /etc/systemd/system/
