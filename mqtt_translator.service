@@ -1,0 +1,16 @@
+[Unit]
+Description=MQTT translator service
+After=multi-user.target
+
+[Service]
+Type=simple
+User=tim
+ExecStart=/home/pi/git/mqtt_translator/mqtt_translator.py
+WorkingDirectory=/home/tim/git/mqtt_translator
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
